@@ -1,5 +1,5 @@
 proxy-groups:
-  - name: 🚀 加密货币
+  - name: 🪙 加密货币
     type: select
     proxies:
       - 🚀 节点选择
@@ -503,7 +503,7 @@ rule-providers:
     format: text
     type: http
 rules:
-  - "RULE-SET,Crypto,🚀 加密货币"
+  - "RULE-SET,Crypto,🪙 加密货币"
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
@@ -539,3 +539,4 @@ rules:
   - "GEOIP,LAN,🎯 全球直连"
   - "GEOIP,CN,🎯 全球直连"
   - "MATCH,🐟 漏网之鱼"
+
