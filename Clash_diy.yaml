@@ -1,5 +1,5 @@
 proxy-groups:
-  - name: 🚀 币安选择
+  - name: 🚀 加密货币
     type: select
     proxies:
       - 🚀 节点选择
@@ -467,6 +467,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  ChinaIp:
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+    path: ./ruleset/ChinaIp.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   ChinaDomain:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
@@ -488,15 +495,15 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  Binance:
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
-    path: ./ruleset/Binance.list
+  Crypto:
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Crypto.list
+    path: ./ruleset/Crypto.list
     behavior: classical
     interval: 86400
     format: text
     type: http
 rules:
-  - "RULE-SET,Binance,🚀 币安选择"
+  - "RULE-SET,Crypto,🚀 加密货币"
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,UnBan,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
@@ -525,8 +532,10 @@ rules:
   - "RULE-SET,ChinaMedia,🌏 国内媒体"
   - "RULE-SET,ProxyMedia,🌍 国外媒体"
   - "RULE-SET,ProxyGFWlist,🚀 节点选择"
+  - "RULE-SET,ChinaIp,🎯 全球直连"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
   - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
   - "RULE-SET,Download,🎯 全球直连"
+  - "GEOIP,LAN,🎯 全球直连"
   - "GEOIP,CN,🎯 全球直连"
   - "MATCH,🐟 漏网之鱼"
