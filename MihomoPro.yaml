@@ -238,7 +238,7 @@ rule-providers:
   LocationDKS:    {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/LocationDKS.mrs}
   Private:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs}
   Download:       {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Download.mrs}
-  Speedtest:      {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Speedtest.mrs}
+  Speedtest:      {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/speedtest.mrs}
   AI:             {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/AI.mrs}  
   Telegram:       {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs}
   Twitter:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs}  
@@ -257,7 +257,7 @@ rule-providers:
   Microsoft:      {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs}  
   Facebook:       {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs}
   Proxy:          {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Proxy.mrs}
-  China:          {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/China.mrs}
+  China:          {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs}
 
   # IP规则
   AdvertisingIP:  {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/Advertising.mrs}
@@ -272,5 +272,5 @@ rule-providers:
   GoogleIP:       {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs}
   FacebookIP:     {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/Facebook.mrs}  
   ProxyIP:        {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/Proxy.mrs} 
-  ChinaIP:        {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/China.mrs}
+  ChinaIP:        {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs}
 # ==================== EOF ====================
