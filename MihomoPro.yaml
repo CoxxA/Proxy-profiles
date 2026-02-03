@@ -212,7 +212,6 @@ rules:
   - RULE-SET,XPTVIP,直接连接,no-resolve
   - RULE-SET,AIIP,人工智能,no-resolve
   - RULE-SET,TelegramIP,电报消息,no-resolve
-  - RULE-SET,SocialMediaIP,社交平台,no-resolve
   - RULE-SET,EmbyIP,Emby服,no-resolve
   - RULE-SET,NetflixIP,奈飞视频,no-resolve
   - RULE-SET,StreamingIP,国际媒体,no-resolve
@@ -240,9 +239,9 @@ rule-providers:
   AI:             {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/AI.mrs}
   Telegram:       {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs}
   Twitter:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs}
-  SocialMedia:    {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/SocialMedia.mrs}
+  SocialMedia:    {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-social-media-!cn.mrs}
   NewsMedia:      {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/NewsMedia.mrs}
-  Games:          {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/Games.mrs}
+  Games:          {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-games-!cn.mrs}
   Crypto:         {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-cryptocurrency.mrs}
   Netflix:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs}
   YouTube:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs}
@@ -260,8 +259,7 @@ rule-providers:
   # IP规则
   PrivateIP:      {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs}
   AIIP:           {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/ai.mrs}
-  TelegramIP:     {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs}  
-  SocialMediaIP:  {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/SocialMedia.mrs}  
+  TelegramIP:     {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs}
   XPTVIP:         {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/XPTV.mrs}
   EmbyIP:         {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/Emby.mrs}
   NetflixIP:      {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs}
