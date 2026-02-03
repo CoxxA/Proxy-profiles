@@ -182,7 +182,6 @@ rules:
   # 域名规则
   - RULE-SET,Private,直接连接
   - RULE-SET,Direct,直接连接
-  - RULE-SET,XPTV,直接连接
   - RULE-SET,AppleCN,直接连接
   - RULE-SET,AI,人工智能
   - DOMAIN-KEYWORD,speedtest,网络测试
@@ -204,7 +203,6 @@ rules:
   # IP规则
   - RULE-SET,AdvertisingIP,REJECT,no-resolve
   - RULE-SET,PrivateIP,直接连接,no-resolve
-  - RULE-SET,XPTVIP,直接连接,no-resolve
   - RULE-SET,AIIP,人工智能,no-resolve
   - RULE-SET,TelegramIP,电报消息,no-resolve
   - RULE-SET,NetflixIP,奈飞视频,no-resolve
@@ -235,7 +233,6 @@ rule-providers:
   Crypto:         {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-cryptocurrency.mrs}
   Netflix:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs}
   YouTube:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs}
-  XPTV:           {<<: *BehaviorDN, url: https://github.com/666OS/rules/raw/release/mihomo/domain/XPTV.mrs}
   Streaming:      {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-media.mrs}
   AppleCN:        {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple-cn.mrs}
   Apple:          {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs}
@@ -249,7 +246,6 @@ rule-providers:
   PrivateIP:      {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs}
   AIIP:           {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/ai.mrs}
   TelegramIP:     {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs}
-  XPTVIP:         {<<: *BehaviorIP, url: https://github.com/666OS/rules/raw/release/mihomo/ip/XPTV.mrs}
   NetflixIP:      {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs}
   GoogleIP:       {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs}
   FacebookIP:     {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/facebook.mrs}
