@@ -92,7 +92,6 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fake-ip-filter:
-    - rule-set:Direct
     - rule-set:Private
     - rule-set:China
     - +.miwifi.com
@@ -205,7 +204,6 @@ rules:
   - RULE-SET,TelegramIP,电报消息,no-resolve
   - RULE-SET,NetflixIP,奈飞视频,no-resolve
   - RULE-SET,GoogleIP,谷歌服务,no-resolve
-  - RULE-SET,ProxyIP,国外流量,no-resolve
   - RULE-SET,ChinaIP,国内流量
 
   # 兜底规则
