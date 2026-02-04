@@ -44,6 +44,7 @@ SelectUS: &SelectUS {type: select, proxies: [美国策略, 默认代理, 故障�
 
 # ==================== 核心配置 ====================
 # 基础配置
+mode: rule
 mixed-port: 7890
 ipv6: true
 allow-lan: true
