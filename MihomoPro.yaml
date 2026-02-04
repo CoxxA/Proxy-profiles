@@ -105,6 +105,13 @@ dns:
   fallback:
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - gfw
+    ipcidr:
+      - 240.0.0.0/4
   fake-ip-filter:
     - rule-set:Private
     - rule-set:China
