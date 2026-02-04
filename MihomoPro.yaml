@@ -21,7 +21,7 @@
 BaseFB: &BaseFB {type: fallback, interval: 300, lazy: true, url: 'https://www.google.com/generate_204'}
 BaseCH: &BaseCH {type: load-balance, interval: 300, lazy: true, url: 'https://www.google.com/generate_204', strategy: consistent-hashing, hidden: true}
 BaseCR: &BaseCR {type: load-balance, interval: 300, lazy: true, url: 'https://www.google.com/generate_204', strategy: round-robin, hidden: true}
-BaseUT: &BaseUT {type: url-test, interval: 300, lazy: true, url: 'https://www.google.com/generate_204', hidden: true}
+BaseUT: &BaseUT {type: url-test, interval: 300, tolerance: 50, lazy: true, url: 'https://www.google.com/generate_204', hidden: true}
 
 # 节点筛选正则表达式 - 基于地理位置和关键词过滤
 FilterHK: &FilterHK '^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG))(?!.*(排除1|排除2|5x)).*$'
