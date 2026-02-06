@@ -93,10 +93,12 @@ tun:
   auto-route: true
   auto-redirect: true
   auto-detect-interface: true
+  strict-route: true
   
 # DNS配置
 dns:
   enable: true
+  prefer-h3: true
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -104,8 +106,14 @@ dns:
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - https://8.8.8.8/dns-query
+    - https://1.1.1.1/dns-query
+  nameserver-policy:
+    "geosite:cn":
+      - 'https://dns.alidns.com/dns-query'
+      - 'https://doh.pub/dns-query'
+    "geosite:geolocation-!cn":
+      - 'https://8.8.8.8/dns-query'
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
