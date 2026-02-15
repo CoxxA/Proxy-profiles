@@ -242,6 +242,9 @@ rules:
   # 兜底规则
   - MATCH,兜底流量
 
+  # 只能解决部分WebRTC泄露
+  - NETWORK,UDP,REJECT
+
 # ==================== 规则集 ====================
 # 规则集行为模板
 BehaviorDN: &BehaviorDN {type: http, behavior: domain, format: mrs, interval: 86400}
