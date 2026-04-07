@@ -1,21 +1,21 @@
-# Claude 核心域名
+# 域名规则（通配符匹配）
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudeusercontent.com
-
-# CDN 与 基础设施
-DOMAIN-SUFFIX,b-cdn.net
-DOMAIN-SUFFIX,ghost.io
-
-# 监控与反欺诈
+DOMAIN-SUFFIX,servd-anthropic-website.b-cdn.net
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,sift
-DOMAIN-KEYWORD,sentry
+DOMAIN-SUFFIX,cdn.anthropic.com
+DOMAIN-SUFFIX,anthropic.auth0.com
+DOMAIN-SUFFIX,anthropic-com.ghost.io
+DOMAIN-SUFFIX,anthropic.com.cdn.cloudflare.net
 
-# NTP 时间同步
+# 兜底规则
+GEOSITE,anthropic
+DOMAIN-KEYWORD,datadog
+DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,sift
 GEOSITE,category-ntp
