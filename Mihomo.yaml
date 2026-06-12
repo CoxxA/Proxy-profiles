@@ -232,6 +232,9 @@ rules:
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,Proxy,国外流量
+  - RULE-SET,Futu,国外流量
+  - RULE-SET,Itiger,国外流量
+  - RULE-SET,Longbridge,国外流量
   - RULE-SET,China,国内流量
 
   # IP规则
@@ -271,6 +274,9 @@ rule-providers:
   Microsoft:      {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs}  
   Proxy:          {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs}
   China:          {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs}
+  Futu:           {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/futu.mrs}
+  Itiger:         {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/itiger.mrs}
+  Longbridge:     {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/longbridge.mrs}
 
   # IP规则
   PrivateIP:      {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs}
