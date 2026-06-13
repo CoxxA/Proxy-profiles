@@ -118,6 +118,7 @@ rules:
   - RULE-SET,Google,谷歌服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,Proxy,国外流量
+  - RULE-SET,HKBroker,国外流量
   - RULE-SET,China,国内流量
 
   # IP规则
@@ -135,6 +136,7 @@ rules:
 # 规则集行为模板
 BehaviorDN: &BehaviorDN {type: http, behavior: domain, format: mrs, interval: 86400}
 BehaviorIP: &BehaviorIP {type: http, behavior: ipcidr, format: mrs, interval: 86400}
+BehaviorCL: &BehaviorCL {type: http, behavior: classical, format: text, interval: 86400}
 
 # 规则提供者
 rule-providers:  
@@ -157,6 +159,7 @@ rule-providers:
   Microsoft:      {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs}  
   Proxy:          {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs}
   China:          {<<: *BehaviorDN, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs}
+  HKBroker:       {<<: *BehaviorCL, url: https://raw.githubusercontent.com/CoxxA/Proxy-profiles/refs/heads/main/Rules/HKBroker.list}
 
   # IP规则
   PrivateIP:      {<<: *BehaviorIP, url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs}
