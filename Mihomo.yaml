@@ -22,7 +22,7 @@ BaseFB: &BaseFB {type: fallback, interval: 300, lazy: true, empty-fallback: REJE
 BaseUT: &BaseUT {type: url-test, interval: 300, tolerance: 30, lazy: true, empty-fallback: REJECT, url: 'https://www.google.com/generate_204', hidden: true}
 
 # 节点筛选正则表达式 - 基于地理位置和关键词过滤
-FilterHK: &FilterHK "^(?i)(?=.*(香港|港深|深港|沪港|广港|陆港|(?<![a-zA-Z])(hk|hkg)(?![a-zA-Z])|hongkong|hongkong|🇭🇰))(?!.*(排除)).*$"
+FilterHK: &FilterHK "^(?i)(?=.*(香港|港深|深港|沪港|广港|陆港|(?<![a-zA-Z])(hk|hkg)(?![a-zA-Z])|hongkong))(?!.*(排除)).*$"
 FilterTW: &FilterTW "^(?i)(?=.*(台湾|台北|台中|台南|台东|湾湾|(?<![a-zA-Z])(tw|tpe|khh|tsa)(?![a-zA-Z])|taiwan|taipei|🇹🇼|🇼🇸))(?!.*(排除)).*$"
 FilterJP: &FilterJP "^(?i)(?=.*(日本|东京|大阪|京都|神奈川|琦玉|(?<![a-zA-Z])(jp|nrt|hnd|kix|cts|fuk)(?![a-zA-Z])|japan|tokyo|🇯🇵))(?!.*(排除)).*$"
 FilterSG: &FilterSG "^(?i)(?=.*(新加坡|坡县|坡|狮城|(?<![a-zA-Z])(sg|sin|xsp)(?![a-zA-Z])|singapore|🇸🇬))(?!.*(排除)).*$"
