@@ -165,7 +165,7 @@ proxy-groups:
   - {name: 人工智能,     <<: *SelectUS, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/AI.png}
   - {name: 油管视频,     <<: *SelectPY, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/YouTube.png}
   - {name: 奈飞视频,     <<: *SelectPY, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Netflix.png}
-  - {name: 国际媒体,     <<: *SelectPY, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/DomesticMedia.png}  怪怪的，需要二次检查
+  - {name: 国际媒体,     <<: *SelectPY, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/DomesticMedia.png}
   - {name: 游戏平台,     <<: *SelectPY, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Game.png}
   - {name: 货币平台,     <<: *SelectSG, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bitcloud.png}
   - {name: 谷歌服务,     <<: *SelectPY, icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Google_Search.png}
